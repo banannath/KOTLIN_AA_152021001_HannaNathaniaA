@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">wikimusic</string>
+
+    <string name="landing_page">
+        With wikimusic, you can explore your favorite artist
+    </string>
+
+    <string name="appdesc">AirPurity, an innovative IoT application, empowers users by providing real-time monitoring of air quality through seamlessly connected IoT devices. By harnessing cutting-edge technology, AirPurity offers a user-friendly interface that effortlessly keeps you informed about the air you breathe. Stay connected to your environment like never before with AirPurity,ensuring a breath of fresh air in the palm of your hands.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

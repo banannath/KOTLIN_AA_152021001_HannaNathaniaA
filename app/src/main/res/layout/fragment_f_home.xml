@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context=".fHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_discover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover Album"
+            android:textSize="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/edt_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search artist's albums"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tv_discover"
+            android:textSize="25sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Search"
+            android:layout_below="@id/edt_query">
+
+        </Button>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_search">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/list_item">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- Add other UI elements inside the ScrollView as needed -->
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

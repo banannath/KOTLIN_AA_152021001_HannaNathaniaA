@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsAlbumActivity"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/md_theme_dark_inversePrimary"
+            android:text="← Back"
+            android:textSize="20sp"
+            android:textColor="@color/md_theme_light_background">
+        </Button>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wikimusic"
+        android:layout_gravity="center">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Album"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Year"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/md_theme_dark_outline"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Featured Artists :"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="5SOS"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_gravity="center">
+    </TextView>
+
+
+    <Button
+        android:id="@+id/uri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Spotify Page">
+
+    </Button>
+
+</LinearLayout>

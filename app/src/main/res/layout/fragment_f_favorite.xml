@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context=".fFavorite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tv_fav_albums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favourite Albums"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/album_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_margin="10dp"
+                android:textSize="21sp"
+                android:layout_below="@id/tv_fav_albums">
+            </EditText>
+
+            <EditText
+                android:id="@+id/album_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Year"
+                android:layout_below="@id/album_name"
+                android:layout_margin="10dp"
+                android:textSize="21sp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/album_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Artists"
+                android:layout_below="@id/album_year"
+                android:layout_margin="10dp"
+                android:textSize="21sp">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/album_artist"
+                android:layout_centerHorizontal="true"
+                android:text="Save">
+
+            </Button>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_save">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/fav_item"
+                    android:layout_below="@id/album_artist"
+                    android:layout_margin="10dp">
+                </androidx.recyclerview.widget.RecyclerView>
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+</FrameLayout>
